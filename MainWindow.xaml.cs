@@ -26,8 +26,9 @@ namespace WpfApp12
             MessageBox.Show("HELLO");
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e) 
         {
+        //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }   
 
         private void regist_Click(object sender, RoutedEventArgs e)
@@ -53,27 +54,32 @@ namespace WpfApp12
 
         private void Name_MouseEnter(object sender, MouseEventArgs e)
         {
-            
+            //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }
 
         private void Name_TouchEnter(object sender, TouchEventArgs e)
         {
+        //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }
 
         private void Name_DragEnter(object sender, DragEventArgs e)
         { 
+        //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }
 
         private void Name_MouseDown(object sender, MouseButtonEventArgs e)
         { 
+        //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }
 
         private void Name_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {  
+        //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }
 
         private void Name_GotFocus(object sender, RoutedEventArgs e)
         {
+        //НЕ ОБРАЩАЙТЕ ВНИМАНИЕ
         }
 
         private void Name_LostFocus(object sender, RoutedEventArgs e)
@@ -158,4 +164,5 @@ namespace WpfApp12
         }   
             
     }
+
 }
