@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp12"
+        mc:Ignorable="d"
+        Title="Лабораторная" Height="300" Width="800" Loaded="Window_Loaded_1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF43613D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="button_hi" Content="HI" HorizontalAlignment="Center" Margin="0,14,0,0" VerticalAlignment="Top" Width="48" Click="Button_Click" Background="#FF3E610E" Foreground="White" Height="20"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Center" Margin="0,61,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="254" MouseEnter="Name_MouseEnter" TouchEnter="Name_TouchEnter" DragEnter="Name_DragEnter" MouseDown="Name_MouseDown" MouseLeftButtonDown="Name_MouseLeftButtonDown" LostFocus="Name_LostFocus" GotFocus="Name_GotFocus_1" SelectionBrush="Black" Foreground="Gainsboro" BorderBrush="Black" Height="18">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF423E3E" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="mail" HorizontalAlignment="Center" Margin="0,84,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="254" LostFocus="mail_LostFocus" GotFocus="mail_GotFocus" Height="18"/>
+        <TextBox x:Name="number" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="254" GotFocus="number_GotFocus" LostFocus="number_LostFocus" Height="18"/>
+        <TextBox x:Name="password" HorizontalAlignment="Center" Margin="0,130,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="254" GotFocus="password_GotFocus" LostFocus="password_LostFocus" Height="18"/>
+        <TextBox x:Name="password2" HorizontalAlignment="Center" Margin="0,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="254" GotFocus="password2_GotFocus" LostFocus="password2_LostFocus" Height="18"/>
+        <Button x:Name="regist" Content="Regist" HorizontalAlignment="Center" Margin="0,198,0,0" VerticalAlignment="Top" Width="66" Click="regist_Click" Background="#FF6E9214" Foreground="Black" Height="20"/>
+        <TextBox x:Name="num1T" Grid.Column="1" HorizontalAlignment="Left" Margin="79,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" RenderTransformOrigin="-0.088,0.503"/>
+        <TextBox x:Name="num2T" Grid.Column="1" HorizontalAlignment="Left" Margin="243,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="math" Grid.Column="1" Content="сложить" HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" Foreground="Black" Click="math_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0B3818"/>
+                    <GradientStop Color="#FFB2C5B2" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="outDA" Grid.Column="1" Content="Вывод: " HorizontalAlignment="Center" Margin="0,190,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="outDA_Копировать" Grid.Column="1" Content="1 число" HorizontalAlignment="Left" Margin="79,52,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="outDA_Копировать1" Grid.Column="1" Content="2 число" HorizontalAlignment="Left" Margin="243,53,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <RadioButton Content="Yes" HorizontalAlignment="Left" Margin="0,181,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+        <RadioButton Content="No" HorizontalAlignment="Left" Margin="0,201,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+        <RadioButton Content="Maybe" HorizontalAlignment="Left" Margin="0,221,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+        <Label x:Name="outDA_Копировать2" Grid.Column="1" Content="Are u ready?" HorizontalAlignment="Left" Margin="0,153,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+    </Grid>
+</Window>
